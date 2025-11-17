@@ -7,8 +7,6 @@ Web Programming For Front End - UNIFECAF
 2.	O que é uma API e consumo de dados em tempo real
 3.	Manipulação do DOM e criação de elementos dinâmicos
 4.	Funções JavaScript utilizadas no projeto
-5.	Escolha da PokeAPI
-6.	Regras de acesso e documentação da PokeAPI
 ________________________________________
 1) Introdução
 Neste trabalho foi desenvolvida uma aplicação web front-end que simula uma Pokédex Pokémon. O objetivo do projeto é consumir dados em tempo real de uma API pública, exibir informações de personagens em cards dinâmicos e praticar conceitos fundamentais de HTML, CSS e JavaScript, como consumo de APIs e manipulação do DOM.
