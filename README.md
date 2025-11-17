@@ -23,7 +23,7 @@ ________________________________________
 4) Funções JavaScript utilizadas no projeto
 O método fetch foi utilizado para realizar as requisições HTTP para a PokeAPI.
 
-A chamada fetch("https://pokeapi.co/api/v2/pokemon/" + idOrName) retorna uma Promise. Em seguida, o método .then() é utilizado para converter a resposta em JSON (response.json()), e outro .then() recebe o objeto com os dados do Pokémon. Em caso de erro (por exemplo, um ID inválido), o método .catch() é acionado, permitindo exibir uma mensagem ao usuário.
+A chamada fetch retorna uma Promise. Em seguida, o método .then() é utilizado para converter a resposta em JSON (response.json()), e outro .then() recebe o objeto com os dados do Pokémon. Em caso de erro (por exemplo, um ID inválido), o método .catch() é acionado, permitindo exibir uma mensagem ao usuário.
 DOM:
 Para montar o card, a aplicação utiliza document.createElement (para criar as tags como <div>, <img>, <h2>, <p>), e appendChild para inserir esses elementos dentro do container principal. Assim, cada vez que o usuário muda de Pokémon, o conteúdo de #cards-container é limpo e reconstruído com as novas informações.
 ________________________________________
