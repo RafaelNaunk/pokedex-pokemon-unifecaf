@@ -1,0 +1,24 @@
+Aplicação Front-End para uma API
+
+Rafael Naunnccik
+Web Programming For Front End - UNIFECAF
+
+1.	Introdução
+2.	O que é uma API e consumo de dados em tempo real
+3.	Manipulação do DOM e criação de elementos dinâmicos
+4.	Funções JavaScript utilizadas no projeto
+________________________________________
+1) Introdução
+Neste trabalho foi desenvolvida uma aplicação web front-end que simula uma Pokédex Pokémon. O objetivo do projeto é consumir dados em tempo real de uma API pública, exibir informações de personagens em cards dinâmicos e praticar conceitos fundamentais de HTML, CSS e JavaScript, como consumo de APIs e manipulação do DOM.
+________________________________________
+2) O que é uma API e consumo de dados em tempo real
+Uma API (Application Programming Interface) é um conjunto de regras que permite que diferentes aplicações se comuniquem entre si. No contexto deste projeto, o navegador envia uma requisição HTTP para a PokeAPI e recebe como resposta um objeto em formato JSON com os dados do Pokémon. Sempre que o usuário navega para o próximo Pokémon ou faz uma pesquisa, uma nova requisição é feita, caracterizando o consumo de dados em “tempo real”.
+________________________________________
+3) Manipulação do DOM e criação de elementos dinâmicos
+Após receber os dados da API, o JavaScript não altera diretamente o HTML escrito no arquivo. Em vez disso, a aplicação utiliza manipulação do DOM para criar os elementos de forma dinâmica. A função createPokemonCard cria uma <div> para o card, um <img> para a imagem do Pokémon, elementos de texto para o nome, tipos e outras informações, e insere tudo dentro da <div id="cards-container"> utilizando o método appendChild. Dessa forma, o conteúdo da página é atualizado de acordo com a resposta da API, sem recarregar o site.
+________________________________________
+
+4) Funções JavaScript utilizadas no projeto
+O método fetch foi utilizado para realizar as requisições HTTP para a PokeAPI.
+
+A chamada fetch retorna uma Promise. Em seguida, o método .then() é utilizado para converter a resposta em JSON (response.json()), e outro .then() recebe o objeto com os dados do Pokémon. Em caso de erro (por exemplo, um ID inválido), o método .catch() é acionado, permitindo exibir uma mensagem ao usuário.
