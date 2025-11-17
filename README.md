@@ -37,5 +37,3 @@ ________________________________________
 A PokeAPI é uma API pública e gratuita, que expõe seus recursos a partir da URL base https://pokeapi.co/api/v2/. 
 
 No projeto foi utilizado principalmente o endpoint /pokemon/{id ou nome}, que permite consultar um Pokémon específico informando seu número ou nome. A resposta retorna um objeto JSON contendo campos como id, name, sprites (imagens), types (tipos do Pokémon), height (altura) e weight (peso), entre outros. 
-
-
