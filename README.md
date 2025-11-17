@@ -24,16 +24,3 @@ ________________________________________
 O método fetch foi utilizado para realizar as requisições HTTP para a PokeAPI.
 
 A chamada fetch retorna uma Promise. Em seguida, o método .then() é utilizado para converter a resposta em JSON (response.json()), e outro .then() recebe o objeto com os dados do Pokémon. Em caso de erro (por exemplo, um ID inválido), o método .catch() é acionado, permitindo exibir uma mensagem ao usuário.
-DOM:
-Para montar o card, a aplicação utiliza document.createElement (para criar as tags como <div>, <img>, <h2>, <p>), e appendChild para inserir esses elementos dentro do container principal. Assim, cada vez que o usuário muda de Pokémon, o conteúdo de #cards-container é limpo e reconstruído com as novas informações.
-________________________________________
-5) Escolha da PokeAPI
-A API escolhida para o projeto foi a PokeAPI, que disponibiliza gratuitamente dados sobre os Pokémon de diferentes gerações. A escolha foi motivada por três fatores principais: 
-1)	Pokémon é uma franquia de grande sucesso dos anos 90 e 2000; 
-2)	A documentação da PokeAPI é clara e de fácil compreensão para iniciantes; 
-3)	A API não exige autenticação por token, o que simplifica o processo de consumo dos dados no contexto de um projeto acadêmico.
-________________________________________
-6) Regras de acesso e documentação da PokeAPI
-A PokeAPI é uma API pública e gratuita, que expõe seus recursos a partir da URL base https://pokeapi.co/api/v2/. 
-
-No projeto foi utilizado principalmente o endpoint /pokemon/{id ou nome}, que permite consultar um Pokémon específico informando seu número ou nome. A resposta retorna um objeto JSON contendo campos como id, name, sprites (imagens), types (tipos do Pokémon), height (altura) e weight (peso), entre outros. 
